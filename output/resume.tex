@@ -1,0 +1,167 @@
+%-------------------------
+% ATS-Friendly Resume Template
+% Clean, Professional, No Duplications
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ATS-friendly margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - ATS friendly
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape John Doe} \\ \vspace{1pt}
+    \small +91 9876543210 $|$ \href{mailto:john.doe@example.com}{\underline{john.doe@example.com}} $|$ 
+    \href{linkedin.com/in/johndoe}{\underline{LinkedIn}} $|$
+    \href{https://github.com/username}{\underline{GitHub}} $|$
+    [City, State]
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+Experienced Java Developer with 4+ years in building scalable backend applications using Java SE/EE, Spring Framework, and Hibernate for robust data management. Proficient in designing RESTful APIs and microservices architecture to ensure high performance and security in Agile environments.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ABC University}{2022-}
+      {B.Tech in Computer Science}{CGPA: 8.2/10}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Java SE/EE (advanced), JavaScript, Python (intermediate) \\
+     \textbf{Frameworks:} Spring Framework, Spring Boot, Hibernate, JPA \\
+     \textbf{Developer Tools:} Git, Maven, Gradle, CI/CD Pipelines, Docker \\
+     \textbf{Databases \& Technologies:} MySQL, Oracle \\
+     \textbf{Core Competencies:} Agile/Scrum, OOP Principles, Design Patterns, Java Concurrency
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+          {\textbf{Scalable Weather Data Microservice (Java + Spring Boot + Hibernate)}}{2024}
+          \resumeItemListStart
+            \resumeItem{Architected a RESTful microservice handling real-time weather forecasts for 10,000+ daily API calls, integrating Hibernate for efficient MySQL data persistence and reducing query latency by 40\% through optimized ORM mappings.}
+            \resumeItem{Implemented Java concurrency utilities to manage multi-threaded data processing, ensuring 99.9\% uptime in simulated high-load scenarios.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{E-Commerce Inventory Management System (Java SE/EE + MySQL + RESTful APIs)}}{2024}
+          \resumeItemListStart
+            \resumeItem{Developed a backend system managing 50,000+ book inventory records using Spring Framework for modular design and JPA/Hibernate for secure database interactions, exposing scalable REST endpoints that improved catalog retrieval speed by 35\% for frontend integration.}
+            \resumeItem{Applied OOP principles and design patterns (e.g., Singleton, Factory) to enhance code reusability and maintainability.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Student Information System (Java + Git + Maven)}}{2024}
+          \resumeItemListStart
+            \resumeItem{Built a console-based application demonstrating OOP and design patterns for managing 1,000+ student records in MySQL, utilizing Maven for build automation and Git for version control, which streamlined data operations and reduced manual errors by 50\% in testing phases.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE (only if exists)-----------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {XYZ Tech Solutions}{2022–Present}
+      {Java Backend Developer}{[City]}
+      \resumeItemListStart
+        \resumeItem{Led development of Java-based applications in Agile teams, implementing Spring Boot microservices that scaled to support 500+ concurrent users.}
+        \resumeItem{Conducted code reviews for 5+ junior developers, enforcing best practices and reducing deployment bugs by 25\% through CI/CD integration with Git and Docker.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {ABC Innovations}{2021}
+      {Software Engineer Intern (Web Development Focus)}{[City]}
+      \resumeItemListStart
+        \resumeItem{Contributed to JavaScript-enhanced web components integrated with Java backends, building responsive UIs with HTML/CSS/JS that handled 20\% faster user interactions in cross-functional projects.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {DataCorp}{2020}
+      {Data Analytics Intern}{[City]}
+      \resumeItemListStart
+        \resumeItem{Analyzed datasets using Python and integrated findings into Java applications via APIs, optimizing data flows that improved reporting accuracy by 15\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS (only if exists)-----------
+
+
+\end{document}
